@@ -1,6 +1,7 @@
 bool test_config();
 #include<vector>
 #include<iostream>
+#include<string>
 
 using std::vector;
 
