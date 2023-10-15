@@ -43,8 +43,15 @@ void display_menu()
     {
         cout<<"Please enter a GPA grade in its numerical value: ";
         cin>>grade;
-        lgrade = gpa_to_letter_grade(grade);
-        cout<<"The letter grade for "<<grade<<" is: "<<lgrade<<"\n\n";
+        if(grade >= 0 && grade <=4)
+        {
+            lgrade = gpa_to_letter_grade(grade);
+            cout<<"The letter grade for "<<grade<<" is: "<<lgrade<<"\n\n";
+        }
+        else
+        {
+            cout<<"You have entered an invalid input. Please try again.\n\n";
+        }
 
         cout<<"If you would like to use this program again, type Y or y: ";
         cin>>userChoice;
